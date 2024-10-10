@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+    <meta charset=UTF-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <title>Sea Seeker </title>
+    <link rel=icon type=image/png href=assets/images/favicon.png> <link rel=stylesheet
+        href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin=anonymous referrerpolicy=no-referrer>
+    <link rel=stylesheet href=assets/css/aos.css> <link rel=stylesheet href=assets/css/animate.css> <link rel=stylesheet
+        href=assets/css/owl.carousel.min.css> <link rel=stylesheet href=assets/css/bootstrap.min.css> <link
+        rel=stylesheet href=assets/css/style.css> </head> <body>
+    <div class=scrtop>
+        <button class=scrtopBtn>
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </div>
+    <header class=navBar-section>
+        <nav class="navbar navbar-expand-lg p-0">
+            <div class=container>
+                <a class=navbar-brand href=index.html>
+                    <div>
+                        <img class="w-100 img-fluid logo-brand" src=assets/images/logo.svg alt=logo>
+                    </div>
+                </a>
+                <button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarContent
+                    aria-controls=navbarContent aria-expanded=false aria-label="Toggle navigation">
+                    <span class=navbar-toggler-icon></span>
+                </button>
+                <div class="collapse navbar-collapse" id=navbarContent>
+                    <ul class="navbar-nav m-auto align-self-center">
+                        <li>
+                            <a class=active aria-current=page href=index.html>Home</a>
+                        </li>
+                        <li class="dropdown show-dropdown">
+                            <a class=dropdown-toggle href=#>Jobs</a>
+                            <ul class=dropdown-menu>
+                                <li><a class=dropdown-item href=job-list.html>Job Lists</a>
+                                </li>
+                                <li><a class=dropdown-item href=job-details.html>Job Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown show-dropdown">
+                            <a class=dropdown-toggle href=#>Company</a>
+                            <ul class=dropdown-menu>
+                                <li><a class=dropdown-item href=company-list.html>Company Lists</a></li>
+                                <li><a class=dropdown-item href=company-details.html>Company Details</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href=contact-us.html>Contact</a>
+                        </li>
+                        <li class="dropdown show-dropdown">
+                            <a class=dropdown-toggle href=#>Pages</a>
+                            <ul class=dropdown-menu>
+                                <li class=sub-dropdown>
+                                    <a class="dropdown-item dropdown-toggle" href=#>Candidate</a>
+                                    <ul class="sub sub-menu dropend">
+                                        <li><a class=dropdown-item href=candadit-list.html>Candidate List</a></li>
+                                        <li><a class=dropdown-item href=candidate-details.html>Candidate Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class=d-flex>
+                        <a class="mbtn mbtn--fill" href=#>
+                            <span>
+                                Login
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="breadcrumb-sec py-115">
+        <div class=container>
+            <div class=row>
+                <div class=list-btn data-aos=zoom-in>
+                    <h1 class="heading-1 text-primary">Job List</h1>
+                    <div class=mt-20>
+                        <nav class=breadcrumb-sec__links>
+                            <ol class="breadcrumb m-0">
+                                <li class=breadcrumb-item><a href=#>Home</a></li>
+                                <li class=breadcrumb-item><a href=#>Job List</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=mt-120>
+        <div class=container>
+            <div class=row>
+                <div class="col-md-12 m-auto job-menu">
+                    <ul class="job-btn-area wow fadeInDown" data-wow-duration=1s data-wow-delay=.3s>
+                        <li class=list-btn data-filter=*>
+                            <button class=chioseBtn>All</button>
+                        </li>
+                        <li class=list-btn data-filter=*>
+                            <button class=chioseBtn>2<sup class=me-2>nd</sup> Officer</button>
+                        </li>
+                        <li class=list-btn data-filter=.featur>
+                            <button class=chioseBtn>3<sup class=me-2>rd</sup> Officer</button>
+                        </li>
+                        <li class=list-btn data-filter=.partTime>
+                            <button class=chioseBtn>Additional chief mate</button>
+                        </li>
+                        <li class=list-btn data-filter=.fullTime>
+                            <button class=chioseBtn>Captain</button>
+                        </li>
+                        <li class=list-btn data-filter=.remot>
+                            <button class=chioseBtn>Deck Cadet</button>
+                        </li>
+                        <li class=list-btn data-filter=.marketing>
+                            <button class=chioseBtn>Chief Engineer</button>
+                        </li>
+                        <li class=list-btn data-filter=.marketing>
+                            <button class=chioseBtn>Ordinary seaman</button>
+                        </li>
+                        <li class=list-btn data-filter=.marketing>
+                            <button class=chioseBtn>Able Seaman</button>
+                        </li>
+                        <li class=list-btn data-filter=.marketing>
+                            <button class=chioseBtn>Bosun</button>
+                        </li>
+                        <li class=list-btn data-filter=.marketing>
+                            <button class=chioseBtn>2<sup class=me-2>nd</sup> Engineer</button>
+                        </li>
+                        <li class=list-btn data-filter=.marketing>
+                            <button class=chioseBtn>3<sup class=me-2>rd</sup> Engineer</button>
+                        </li>
+                        <li class=list-btn data-filter=.marketing>
+                            <button class=chioseBtn>4<sup class=me-2>th</sup> Engineer
+                            </button>
+                        </li>
+                        <li class=list-btn data-filter=.marketing>
+                            <button class=chioseBtn>5<sup class=me-2>th</sup> Engineer</button>
+                        </li>
+                        <li class=list-btn data-filter=.marketing>
+                            <button class=chioseBtn>Additional master</button>
+                        </li>
+                        <li class=list-btn data-filter=.marketing>
+                            <button class=chioseBtn>Electro-technical officer</button>
+                        </li>
+                        <li class=list-btn data-filter=.marketing>
+                            <button class=chioseBtn>Apprentice Chef</button>
+                        </li>
+                        <li class=list-btn data-filter=.marketing>
+                            <button class=chioseBtn>Chief cook</button>
+                        </li>
+                        <li class=list-btn data-filter=.marketing>
+                            <button class=chioseBtn>Deck department</button>
+                        </li>
+                        <li class=list-btn data-filter=.marketing>
+                            <button class=chioseBtn>Chief Officer</button>
+                        </li>
+                        <li class=list-btn data-filter=.marketing>
+                            <button class=chioseBtn>Trainee OS</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row g-3 g-sm-5 all-jobs">
+                <div class="col-sm-6 col-lg-4 marketing">
+                    <div class="featured__card border wow fadeInDown" data-wow-duration=1s data-wow-delay=.1s
+                        onclick='location.href="job-details.html"'>
+                        <div class=featured__card--head>
+                            <div>
+                                <img class="w-100 img-fluid" src=assets/images/pixner.png alt=pixner>
+                            </div>
+                            <div>
+                                <p class=text-primary>Pixner</p>
+                                <h6 class="text-larg text-dark">Jr Graphic Designer</h6>
+                            </div>
+                        </div>
+                        <div class=featured__card--body>
+                            <div>
+                                <i class="fa-solid fa-ship"></i>
+                                <h5>Nautilus</h5>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h5>London</h5>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-money-bill"></i>
+                                <h5>90k-130k (Voyage) </h5>
+                            </div>
+                        </div>
+                        <div class=featured__card--foot>
+                            <a href=#>180day Voyage</a>
+                            <a href=#>urgent</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 remot">
+                    <div class="featured__card border wow fadeInDown" data-wow-duration=1s data-wow-delay=.2s
+                        onclick='location.href="job-details.html"'>
+                        <div class=featured__card--head>
+                            <div>
+                                <img class="w-100 img-fluid" src=assets/images/upwork.png alt=upwork>
+                            </div>
+                            <div>
+                                <p class=text-primary>Upwork</p>
+                                <h6 class="text-larg text-dark">Product Designer</h6>
+                            </div>
+                        </div>
+                        <div class=featured__card--body>
+                            <div>
+                                <i class="fa-solid fa-ship"></i>
+                                <h5>Nautilus</h5>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h5>London</h5>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-money-bill"></i>
+                                <h5>90k-130k (Voyage) </h5>
+                            </div>
+                        </div>
+                        <div class=featured__card--foot>
+                            <a href=#>180day Voyage</a>
+                            <a href=#>urgent</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 fullTime">
+                    <div class="featured__card border wow fadeInDown" data-wow-duration=1s data-wow-delay=.3s
+                        onclick='location.href="job-details.html"'>
+                        <div class=featured__card--head>
+                            <div>
+                                <img class="w-100 img-fluid" src=assets/images/medium.png alt=medium>
+                            </div>
+                            <div>
+                                <p class=text-primary>Medium</p>
+                                <h6 class="text-larg text-dark">Content Writer</h6>
+                            </div>
+                        </div>
+                        <div class=featured__card--body>
+                            <div>
+                                <i class="fa-solid fa-ship"></i>
+                                <h5>Nautilus</h5>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h5>London</h5>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-money-bill"></i>
+                                <h5>90k-130k (Voyage) </h5>
+                            </div>
+                        </div>
+                        <div class=featured__card--foot>
+                            <a href=#>180day Voyage</a>
+                            <a href=#>urgent</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 partTime">
+                    <div class="featured__card border wow fadeInDown" data-wow-duration=1s data-wow-delay=.4s
+                        onclick='location.href="job-details.html"'>
+                        <div class=featured__card--head>
+                            <div>
+                                <img class="w-100 img-fluid" src=assets/images/reddit.png alt=reddit>
+                            </div>
+                            <div>
+                                <p class=text-primary>Reddit</p>
+                                <h6 class="text-larg text-dark">UX Designer</h6>
+                            </div>
+                        </div>
+                        <div class=featured__card--body>
+                            <div>
+                                <i class="fa-solid fa-ship"></i>
+                                <h5>Nautilus</h5>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h5>London</h5>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-money-bill"></i>
+                                <h5>90k-130k (Voyage) </h5>
+                            </div>
+                        </div>
+                        <div class=featured__card--foot>
+                            <a href=#>180day Voyage</a>
+                            <a href=#>urgent</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 featur">
+                    <div class="featured__card border wow fadeInDown" data-wow-duration=1s data-wow-delay=.5s
+                        onclick='location.href="job-details.html"'>
+                        <div class=featured__card--head>
+                            <div>
+                                <img class="w-100 img-fluid" src=assets/images/glussdoor.png alt=glussdoor>
+                            </div>
+                            <div>
+                                <p class=text-primary>Glussdoor</p>
+                                <h6 class="text-larg text-dark">Product Designer</h6>
+                            </div>
+                        </div>
+                        <div class=featured__card--body>
+                            <div>
+                                <i class="fa-solid fa-ship"></i>
+                                <h5>Nautilus</h5>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h5>London</h5>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-money-bill"></i>
+                                <h5>90k-130k (Voyage) </h5>
+                            </div>
+                        </div>
+                        <div class=featured__card--foot>
+                            <a href=#>180day Voyage</a>
+                            <a href=#>urgent</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 marketing">
+                    <div class="featured__card border wow fadeInDown" data-wow-duration=1s data-wow-delay=.6s
+                        onclick='location.href="job-details.html"'>
+                        <div class=featured__card--head>
+                            <div>
+                                <img class="w-100 img-fluid" src=assets/images/uber.png alt=uber>
+                            </div>
+                            <div>
+                                <p class=text-primary>Uber</p>
+                                <h6 class="text-larg text-dark">Content Writer</h6>
+                            </div>
+                        </div>
+                        <div class=featured__card--body>
+                            <div>
+                                <i class="fa-solid fa-ship"></i>
+                                <h5>Nautilus</h5>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h5>London</h5>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-money-bill"></i>
+                                <h5>90k-130k (Voyage) </h5>
+                            </div>
+                        </div>
+                        <div class=featured__card--foot>
+                            <a href=#>180day Voyage</a>
+                            <a href=#>urgent</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 remot">
+                    <div class="featured__card border wow fadeInDown" data-wow-duration=1s data-wow-delay=.7s
+                        onclick='location.href="job-details.html"'>
+                        <div class=featured__card--head>
+                            <div>
+                                <img class="w-100 img-fluid" src=assets/images/reddit.png alt=reddit>
+                            </div>
+                            <div>
+                                <p class=text-primary>Reddit</p>
+                                <h6 class="text-larg text-dark">UX Designer</h6>
+                            </div>
+                        </div>
+                        <div class=featured__card--body>
+                            <div>
+                                <i class="fa-solid fa-ship"></i>
+                                <h5>Nautilus</h5>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h5>London</h5>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-money-bill"></i>
+                                <h5>90k-130k (Voyage) </h5>
+                            </div>
+                        </div>
+                        <div class=featured__card--foot>
+                            <a href=#>180day Voyage</a>
+                            <a href=#>urgent</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 fullTime">
+                    <div class="featured__card border wow fadeInDown" data-wow-duration=1s data-wow-delay=.8s
+                        onclick='location.href="job-details.html"'>
+                        <div class=featured__card--head>
+                            <div>
+                                <img class="w-100 img-fluid" src=assets/images/glussdoor.png alt=glussdoor>
+                            </div>
+                            <div>
+                                <p class=text-primary>Glussdoor</p>
+                                <h6 class="text-larg text-dark">Product Designer</h6>
+                            </div>
+                        </div>
+                        <div class=featured__card--body>
+                            <div>
+                                <i class="fa-solid fa-ship"></i>
+                                <h5>Nautilus</h5>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h5>London</h5>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-money-bill"></i>
+                                <h5>90k-130k (Voyage) </h5>
+                            </div>
+                        </div>
+                        <div class=featured__card--foot>
+                            <a href=#>180day Voyage</a>
+                            <a href=#>urgent</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 partTime">
+                    <div class="featured__card border wow fadeInDown" data-wow-duration=1s data-wow-delay=.9s
+                        onclick='location.href="job-details.html"'>
+                        <div class=featured__card--head>
+                            <div>
+                                <img class="w-100 img-fluid" src=assets/images/uber.png alt=uber>
+                            </div>
+                            <div>
+                                <p class=text-primary>Uber</p>
+                                <h6 class="text-larg text-dark">Content Writer</h6>
+                            </div>
+                        </div>
+                        <div class=featured__card--body>
+                            <div>
+                                <i class="fa-solid fa-ship"></i>
+                                <h5>Nautilus</h5>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h5>London</h5>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-money-bill"></i>
+                                <h5>90k-130k (Voyage) </h5>
+                            </div>
+                        </div>
+                        <div class=featured__card--foot>
+                            <a href=#>180day Voyage</a>
+                            <a href=#>urgent</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center pagination-sec">
+                <div class="col-2 d-flex justify-content-center align-items-center gap-1 wow fadeInDown"
+                    data-wow-duration=1s data-wow-delay=1s>
+                    <a href=# class=pbtn>
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </a>
+                    <a class="pbtn text-small" href=#>1</a>
+                    <a class="pbtn text-small" href=#>2</a>
+                    <a href=# class=pbtn>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="subscribe mt-120 wow fadeInDown">
+        <div class=container>
+            <div class=row>
+                <div class="col-lg-8 m-auto">
+                    <h2 class="heading-2 text-center text-white">Subscribe Our News Letter</h2>
+                    <form action=# class="inp-group col-md-9 mt-55 mx-auto">
+                        <input type=email placeholder="Email Address">
+                        <button class="mbtn mbtn--fill bg-primary">
+                            <span>
+                                SUBSCRIBE
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer mt-120">
+        <div class=container>
+            <div class="row justify-content-evenly g-4 g-sm-5 g-md-0">
+                <div class="col-md-4 wow fadeInDown" data-wow-duration=1s data-wow-delay=.2s>
+                    <div>
+                        <img class="w-100 logo-brand" src=assets/images/logo.svg alt=logo>
+                    </div>
+                    <p class=mt-20>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra commodo amet vitae
+                        id odio.</p>
+                </div>
+                <div class="col-md-3 wow fadeInDown" data-wow-duration=1s data-wow-delay=.3s>
+                    <h3 class=heading-3>Need Help!</h3>
+                    <div class=mt-20>
+                        <p>Call: +123 456 7895</p>
+                        <p class=mt-2><a href=https://pixner.net/cdn-cgi/l/email-protection class=__cf_email__
+                                data-cfemail=345051595b745051595b1a575b59>[email&#160;protected]</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3 wow fadeInDown" data-wow-duration=1s data-wow-delay=.5s>
+                    <h3 class=heading-3>Follow Us</h3>
+                    <div class="social mt-20">
+                        
+                        <a href=#>
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href=#>
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href=#>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href=#>
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-55 border-top">
+                <div class="col text-center mt-25 pb-5 wow fadeInDown">
+                    <p class=text-figure>© 2022 Sea Seeker. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src=assets/js/jquery.min.js> </script> <script src=assets/js/owl.carousel.min.js> </script> <script
+        src=assets/js/bootstrap.bundle.min.js> </script> <script src=assets/js/aos.js> </script> <script
+        src=assets/js/wow.min.js> </script> <script src=assets/js/isotope.min.js> </script> <script
+        src=assets/js/filter.js> </script> <script src=assets/js/app.js> </script> </body> </html>
